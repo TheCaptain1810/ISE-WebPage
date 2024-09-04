@@ -1,0 +1,117 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #31383d;
+  color: whitesmoke;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fc5203;
+  color:whitesmoke;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header_title {
+  font-weight: 500;
+}
+
+.navbar a{
+  margin: 0.5rem;
+}
+
+.videos {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+}
+
+.videoItem iframe {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.videoTitle {
+  color: whitesmoke;
+}
+
+.main {
+  flex: 1;
+}
+
+.information {
+  margin: 2rem;
+}
+
+.sections {
+  margin: 5rem;
+}
+
+.highlight {
+  color: #fc5203;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0394fc;
+  color:whitesmoke;
+  padding: 1rem;
+  gap: 3rem;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  font-size: small;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: whitesmoke;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: whitesmoke;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
